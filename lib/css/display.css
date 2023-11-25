@@ -1,0 +1,146 @@
+body {
+  background-color: #222222;
+  font-family: 'Press Start 2P', monospace;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: #50E661;
+}
+
+a > *:hover {
+  transform: scale(1.2);
+}
+
+li {
+  list-style-type: none;
+}
+
+canvas {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-user-drag: none;
+}
+
+#display-main {
+  width: 648px;
+  margin: auto;
+}
+
+#display-header {
+  display: flex;
+  justify-content: space-between;
+  max-width: 947px;
+  margin: auto;
+}
+
+#health-widget i {
+  color: #DE0000;
+  padding-bottom: 5px;
+}
+
+#about-widget {
+  margin-left: 50px;
+  flex: 1;
+}
+
+#mac-energy i {
+  color: #50E661;
+}
+
+#canvas-container {
+  height: 479px;
+  width: 648px;
+  margin:auto;
+  position: relative;
+}
+
+#canvas-bot {
+  z-index: 0;
+}
+
+#canvas-mid {
+  z-index:  1;
+}
+
+#canvas-top {
+  z-index:  2;
+}
+
+.control-display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.control-display ul {
+  padding: 0;
+}
+
+.control-display ul li {
+  padding-bottom: 5px;
+}
+
+.key-control {
+  color: yellow;
+}
+
+h1 {
+  color: #DE0000;
+}
+
+.title {
+  text-align: center;
+  margin: auto;
+
+}
+
+.mute-menu {
+  display: flex;
+  justify-content: space-around;
+}
+
+.mute-menu h3 {
+  cursor: pointer;
+}
+
+.mute-menu h3:first-child:hover {
+  color: #DE0000;
+}
+
+.mute-menu h3:last-child:hover {
+  color: #50E661;
+}
+
+.help-txt {
+  font-size: 10px;
+  color: #50E661;
+}
+
+.hidden {
+  display: none;
+
+}
+
+.modal {
+  position: absolute;
+  top: 20%;
+  text-align: center;
+  z-index: 1000;
+}
